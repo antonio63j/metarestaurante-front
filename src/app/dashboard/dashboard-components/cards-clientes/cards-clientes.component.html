@@ -1,0 +1,69 @@
+<div class="contenedor-tutoriales">
+
+  <!--
+  <div class="contenedor-tutoriales card-dashboard-titulo">
+  <h3 class="font-medium my-3" style="text-align: center;">Acciones de los clientes</h3>
+  -->
+  <h1 class="sangria" style="padding-top: 1.5em;">Acciones de los clientes</h1>
+
+  <div class="card-group">
+      <div class="card card-dashboard">
+        <img class="card-img-top" src="assets/images/cards/menu-cliente.png"
+        alt="Fácil e intuitiva selleción de menú para el cliente" 
+        title="El cliente seleccionará los platos que componene el menú"/>     
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-black">Elegir menú</h4>
+          <p class="sangria">
+            Para añadir productos al carrito, los clientes deberán entrar en sesión.
+          </p>
+          <p class="sangria">
+            Un pedido podrá consistir en uno o varios menús y/o uno o varios articulos de la carta.
+            El cliente tendra varias opciones para el primer, segundo plato y postre.
+          </p>
+          <!-- <a href="guia/hacer-pedido" class="mt-auto btn btn-dark">Tutorial</a> -->
+          <a [routerLink]="['/guia-clientes/menu']" class="mt-auto btn btn-dark">Tutorial</a>
+        </div>
+      </div>
+
+      <div class="card card-dashboard">
+        <img class="card-img-top" src="assets/images/cards/elegir-de-la-carta.png"
+        alt="Fácil e intuitiva selleción de platos para el cliente" 
+        title="Los clientes registrados podrán añadir platos al carrito"/>
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-black">Elegir de la carta</h4>
+          <p class="sangria">
+            Para añadir productos al carrito, los clientes deberán entrar en sesión.
+          </p>
+          <p class="sangria">
+            Para la selección de productos de la carta, el cliente dispondrá de filtros como el tipo
+            de plato, rango de precios, y palabras de busqueda.
+          </p>
+          <p class="sangria">
+            Para realizar un pedido, los clientes deberán registrarse y entrar en sesión.
+          </p>
+          <!-- <a href="guia/hacer-pedido" class="mt-auto btn btn-dark">Tutorial</a> -->
+          <a [routerLink]="['/guia-clientes/carta']" class="mt-auto btn btn-dark">Tutorial</a>
+        </div>
+      </div>
+
+      <div class="card card-dashboard">
+        <img class="card-img-top" src="assets/images/cards/tramitar-pedido.png"
+        alt="Tramitación del pedido online" 
+        title="El cliente tramitará el pedido con los productos del carrito" />
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-black">Tramitar pedido</h4>
+          <p class="sangria">
+            Para tramitar un pedido, los clientes deberán entrar en sesión.
+          </p>
+          <p class="sangria">
+            El cliente determinará el día y hora de la entrega del pedido, así como se se desea 
+            la entrega en domicilio o la recogida en el propio restaurante.
+          </p>
+          <!-- <a href="guia/hacer-pedido" class="mt-auto btn btn-dark">Tutorial</a> -->
+          <a [routerLink]="['/guia-clientes/carrito']" class="mt-auto btn btn-dark">Tutorial</a>
+        </div>
+
+      </div>
+  </div>
+
+</div>

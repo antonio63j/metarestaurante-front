@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800');
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import 'bootstrap/scss/bootstrap';
+
+@import "./styles/mis-variables";
+
+.color-modal-header{
+    background-color: $oxido !important;
+}
+
+.grupo-botones {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12px;
+}
+
+button.margin-right {
+    margin-right: 20px;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: x-large;
+    color: black !important;
+}
+
+.grupo-links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    // margin-top: 12px;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.contenedor-tutoriales {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.card-img-top {
+    object-fit: cover;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+
+}
+
+.video-centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sangria {
+    text-indent:3%;
+ }
+
+
+ h1.sangria {
+    font-weight: normal;
+    font-size: calc(0.6em + 1vw);
+
+    
+    text-align: center;
+    color: rgb(215, 91, 28);
+    text-decoration: underline overline $oxido;
+}
+
+h2.sangria {
+    font-weight: normal;
+    font-size: calc(0.4em + 0.55vw);
+    line-height: 1.2em;
+    padding: 0.25em;
+    margin: 0.2em;
+}
+
+/*
+ h1.sangria {
+    font-size: calc(0.6em + 1vw);
+    font-weight: normal;
+    text-align: center;
+    color: rgb(215, 91, 28);
+    text-decoration: underline overline $oxido;
+}
+
+h2.sangria {
+    font-size: calc(0.4em + 0.55vw);
+    font-weight: normal;
+    line-height: 1.2em;
+    padding: 0.25em;
+    margin: 0.2em;
+}
+*/

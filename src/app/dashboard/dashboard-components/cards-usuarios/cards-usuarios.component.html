@@ -1,0 +1,104 @@
+<div class="contenedor-tutoriales">
+  <h1 class="sangria" style="padding-top: 1.5em;">Acciones del usuario administrador de la web</h1>
+
+  <div class="card-group">
+    <div class="card mb-4 card-dashboard">
+      <img class="card-img-top" src="assets/images/cards/clasificacion.png" 
+      alt="Clasificación de sugerencias" 
+      title="El cliente podrá agrupar o clasificar los platos, de esta manera se podrá realizar
+        una mejor gestión de ellos. Por ejemplo, facilitando la busqueda mediante filtros"/>
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title text-black">Clasificación de articulos</h4>
+        <p class="card-text sangria">
+          Es este apartado se definen las clases o categorías en las que se agruparán cada uno de los artículos.
+          Esta clasificación nos será útil a la hora de filtrar los articulos o sugerencias de la carta.
+        </p>
+          <a [routerLink]="['/guia/categorias']" class="mt-auto btn btn-dark">Tutorial</a>
+      </div>
+    </div>
+
+    <div class="card mb-4 card-dashboard">
+      <img class="card-img-top" src="assets/images/cards/imagenes-portada.png"
+        alt="Fácil mantenimiento de las imágenes de la portada de la página" 
+        title="El diseño de la portada de la web de tu restaurante, está en tus manos"/>
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title text-black">Imágenes de la portada</h4>
+        <p class="card-text sangria">
+          Desde aquí el administrador del sitio podrá establecer las imágnes de la portada de la web.
+          Podrá contar con nuestro asesoramiento en la selección y tratamiento de imágenes para que
+          la web se carge rápidadmente.
+        </p>
+          <a [routerLink]="['/guia/imagenes-portada']" class="mt-auto btn btn-dark">Tutorial</a>
+      </div>
+    </div>
+
+    <div class="card mb-4 card-dashboard">
+      <img class="card-img-top" src="assets/images/cards/datos-empresa.png"
+        alt="Fácil mantenimiento de los datos de empresa" 
+        title="Las páginas web de Metarestaurante, te pemitirán tener los datos de tu restaurante actualizados"/>
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title text-black">Datos de empresa</h4>
+        <p class="card-text sangria">
+          Desde aquí el administrador podrá actualizar información básica del restaurante.
+        </p>
+        <p class="sangria">
+          Datos como la dirección de correo, nombre de la empresa, horario, teléfono de contacto o textos de
+          la portada podrán modificarse online.
+        </p>
+          <a [routerLink]="['/guia/datos-empresa']" class="mt-auto btn btn-dark">Tutorial</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-group">
+    <div class="card card-dashboard">
+      <img class="card-img-top" src="assets/images/cards/carta.png" alt="Clasificación de sugerencias"
+           title="Tu página web de Metarestaurante te pemitirá clasificar y organizar los articulos de tu restaurante" />
+      <div class="card-body d-flex flex-column">
+        <h1 class="card-title text-black">Carta</h1>
+        <p class="sangria">
+          Cada uno de los articulos o sugerencias que se añadan a la carta, tendrá asignado un grupo con la finalidad
+          de que un usuario
+          administrador o cliente busque artículos aplicando dicha clase o grupo en los filtros.
+          El en caso de que un producto quede sin stock, existe la posibilidad de que no aparezce en los listados, sin
+          tener
+          que dar de baja el producto.
+        </p>
+          <a [routerLink]="['/guia/carta']" class="mt-auto btn btn-dark">Tutorial</a>
+      </div>
+    </div>
+
+    <div class="card card-dashboard">
+      <img class="card-img-top" src="assets/images/cards/menu.png" alt="Mantenimiento de menús" 
+      title="La página web de MetaRestaurante, te posibilita que tú mismo realices el diseño de menús"/>
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title text-black">Menús</h4>
+        <p class="card-text sangria">
+          El o los administrador podrán crear, actualizar y eliminar menús.
+        </p>
+        <p class="sangria">
+          Un menú se compone de un primer plato, un segundo plato y postre. Cada uno de estos componentes podrá tener
+          varias
+          sugerencias. De manera que el cliente podrá selecionar entre varios primeros, segundos y postres.
+        </p>
+          <a [routerLink]="['/guia/menu']" class="mt-auto btn btn-dark">Tutorial</a>
+      </div>
+    </div>
+
+    <div class="card card-dashboard">
+      <img class="card-img-top" src="assets/images/cards/pedidos.png"
+        alt="Fácil mantenimiento de los pedidos online de los clientes de tu restaurante" 
+        title="Fácil administración de los pedidos online de tus clientes"/>
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title text-black">Gestión de pedidos</h4>
+        <p class="card-text sangria">
+          Un usuario administrador podrá llevar el control sobre los estados por los que irán pasando cada uno de los
+          pedidos de
+          los clientes. Por ejemplo, podrá buscar los pedidos pendientes de su elaboración, cobro o entrega.
+        </p>
+          <a [routerLink]="['/guia/pedidos']" class="mt-auto btn btn-dark">Tutorial</a>
+      </div>
+    </div>
+  </div>
+
+</div>

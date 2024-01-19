@@ -1,0 +1,82 @@
+<!-- <nav [ngClass]="{ sidebarPushRight: isActive, collapsed: collapsed }" class="sidebar"> -->
+<!-- <nav [ngClass]="{ sidebarPushRight: isActive }" class="sidebar"> -->
+<nav class="sidebar">
+
+  <div class="list-group">
+    <div class="header-fields">
+      <a [routerLink]="['/dashboard']" class="list-group-item">
+        <span><i class="fas fa-home"></i>&nbsp; Home</span>
+      </a>
+      <a [routerLink]="['/contacto']" class="list-group-item">
+        <span><i class="fas fa-file-signature"></i>&nbsp; Contacto</span>
+      </a>
+      <a [routerLink]="['/ventajas']" class="list-group-item">
+        <span><i class="fas fa-list-ul"></i>&nbsp; Ventajas</span>
+      </a>
+
+      <div class="nested-menu">
+
+        <a (click)="addExpandClass('profile')" class="list-group-item">
+          <span><i class="fas fa-video"></i>&nbsp; Tutoriales</span>
+        </a>
+        <li [class.expand]="showMenu === 'profile'" class="nested">
+          <ul class="submenu">
+            <li>
+              <b style="color:white;">Guía para administradores</b>
+              <a class="dropdown-item" [routerLink]="['/guia/datos-empresa']">
+                <span><i class="fas fa-address-card"></i> Datos Empresa</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="['/guia/imagenes-portada']">
+                <i class="fas fa-images"></i> Imágenes de portada
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="['/guia/categorias']">
+                <span><i class="fas fa-folder-open"></i> Clasificar productos
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="['/guia/carta']">
+                <i class="fas fa-hard-hat"></i> Carta
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/guia/menu']" class="dropdown-item">
+                <i class="fas fa-utensils"></i> Menu
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="['/guia/pedidos']" class="dropdown-item">
+                <i class="fas fa-shipping-fast"></i> Pedidos
+              </a>
+            </li>
+            <li>
+              <b style="color:white;">Guía para clientes</b>
+              <a class="dropdown-item" [routerLink]="['/guia-clientes/carta']">
+                <span><i class="fas fa-pizza-slice"></i> Pedidos de carta</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="['/guia-clientes/menu']">
+                <i class="fas fa-drumstick-bite"></i> Pedidos de menús
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="['/guia-clientes/carrito']" class="dropdown-item">
+                <i class="fas fa-shopping-cart"></i> Tramitar pedidos
+              </a>   
+            </li>            
+          </ul>
+        </li>
+      </div>
+
+      <a href={{env.urlWebDemo}} class="list-group-item">
+        <span><i class="fas fa-link"></i>&nbsp; Demo</span>
+      </a>
+      
+    </div> <!-- heder-fields-->
+  </div> <!-- clase="group" -->
+</nav>

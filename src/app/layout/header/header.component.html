@@ -1,0 +1,120 @@
+<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark"> -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+
+  <div class="container">
+    <a class="navbar-brand flex-column align-items-start" href="#">
+      <div class="navbar-nav mb-lg-0">
+        <!-- <div class="logo">
+          <h2> <a href="#"><i class="fas fa-utensils" aria-hidden="true"></i> {{empresa}}</a></h2>
+        </div> -->
+
+        <!-- <span class="logo-text">  
+          <img
+          src="assets/images/logos/metaRestaurante.svg"
+          class="dark-logo"
+          href="restaurante.fernandezlucena.es"
+          alt="metaRestaurante diseño de la página web para tu restaurante"
+          /> 
+        </span> -->
+
+        <a href={{env.urlWebDemo}}>  
+          <img
+          src="assets/images/logos/metaRestaurante.svg"
+          class="dark-logo"
+          alt="metaRestaurante diseño de la página web para tu restaurante"
+          title="Las páginas web de metaRestaurante facilitan la gestión de tu restaurante"
+          /> 
+        </a>
+
+      </div>
+
+      <div class="navbar-nav mt-0">
+        <h5><a style="margin-right: 17px" href="#"><i class="fas fa-phone"
+              aria-hidden="true"></i> 999999999</a></h5>
+
+      </div>
+    </a>
+
+    <button (click)="toggleSidebar()" class="navbar-toggler" type="button">
+      <i aria-hidden="true" class="fa fa-bars text-muted"></i>
+    </button>
+
+
+    <div class="collapse navbar-collapse flex-column align-items-end" id="navbarCollapse">
+      <!-- navbar1 -->
+      <div class="navbar-nav mb-lg-0">
+        <h5><a href="#" style="margin-right: 10px">
+            <i class="fas fa-highlighter"></i>
+            La web que necesitas para tu restaurante
+          </a></h5>
+      </div>
+
+      <ul class="navbar-nav mt-0">
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" [routerLink]="['/dashboard']">
+            <i class="fas fa-home"></i> <b> Home</b>
+          </a>
+        </li>
+
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" [routerLink]="['/contacto']">
+            <i class="fas fa-file-signature"></i> <b> Contacto</b>
+          </a>
+        </li>
+
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" [routerLink]="['/ventajas']">
+            <i class="fas fa-list-ul"></i> <b> Ventajas</b>
+          </a>
+        </li>
+
+        <li class="nav-item dropdown" ngbDropdown>
+
+          <a class="nav-link" [routerLink]="['/guia/datos-empresa']" ngbDropdownToggle>
+            <i class="fas fa-video"></i>
+            <b> Tutoriales</b>
+          </a>
+
+          <div class="dropdown-menu-right" ngbDropdownMenu>
+            <b>Guía para administradores</b>
+            <a [routerLink]="['/guia/datos-empresa']" class="dropdown-item">
+              <i class="fas fa-address-card"></i> Datos empresa
+            </a>
+            <a [routerLink]="['/guia/imagenes-portada']" class="dropdown-item">
+              <i class="fas fa-images"></i> Imagenes de portada
+            </a>
+            <a [routerLink]="['/guia/categorias']" class="dropdown-item">
+              <i class="fas fa-folder-open"></i> Clasificación productos
+            </a>
+            <a [routerLink]="['/guia/carta']" class="dropdown-item">
+              <i class="fas fa-hard-hat"></i> Elaboración de la carta
+            </a>
+            <a [routerLink]="['/guia/menu']" class="dropdown-item">
+              <i class="fas fa-utensils" aria-hidden="true"></i> Elaboración de menús
+            </a>
+            <a [routerLink]="['/guia/pedidos']" class="dropdown-item">
+              <i class="fas fa-shipping-fast"></i> Gestión de pedidos
+            </a>
+            <b>Guía para clientes</b>
+            <a [routerLink]="['/guia-clientes/carta']" class="dropdown-item">
+              <i class="fas fa-pizza-slice"></i> Pedidos de carta
+            </a>
+            <a [routerLink]="['/guia-clientes/menu']" class="dropdown-item">
+              <i class="fas fa-drumstick-bite"></i> Pedidos de menus
+            </a>    
+            <a [routerLink]="['/guia-clientes/carrito']" class="dropdown-item">
+              <i class="fas fa-shopping-cart"></i> Tramitar pedidos
+            </a>   
+          </div>
+        </li>
+
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" href={{env.urlWebDemo}}>
+            <i class="fas fa-link"></i> <b> Demo</b>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div> <!-- container -->
+</nav>
